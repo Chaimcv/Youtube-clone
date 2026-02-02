@@ -2,17 +2,17 @@ import React from 'react'
 
 const Head = () => {
   return (
-    <div className='grid grid-flow-col'>
-        <div className='flex'>
-            <img className="h-[8%] w-[8%]" src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1280px-Hamburger_icon.svg.png' alt='hamburger menu'></img>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1280px-YouTube_Logo_2017.svg.png' alt='logo'></img>
+    <div className='grid grid-flow-col p-5 m-2 shadow-xl'>
+        <div className='flex col-span-1 justify-around'>
+            <img className="h-6 gap-2" src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1280px-Hamburger_icon.svg.png' alt='hamburger menu'></img>
+            <img className='h-6' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1280px-YouTube_Logo_2017.svg.png' alt='logo'></img>
         </div>
-        <div>
-            <input type='text' />
-            <button>Search</button>
+        <div className='col-span-10 text-center flex inline-block'>
+            <input type='text' placeholder="Search" className='w-1/2 rounded-s-xl border border-slate-400' />
+            <button className='border border-slate-400 rounded-e-xl'><img className="w-11" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStyFE3cmdz5xct0IyrFWpbLlATgczRKuarKw&s' alt='search-icon' /></button>
         </div>
-        <div>
-            <img src='https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png' alt='user-icon'></img>
+        <div className='col-span-1'>
+            <img className='h-5'src='https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png' alt='user-icon'></img>
         </div>
     </div>
   )
