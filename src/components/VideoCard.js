@@ -1,9 +1,19 @@
 import React from 'react'
 
-const VideoCard = ({info}) => {
+const VideoCard = ({ info }) => {
     console.log(info,"data passed from videocontainer");
+
+    const{ snippet,statistics }= info;
+    const{ channelTitle,title,thumbnails }=snippet;
   return (
-    <div>VideoCard</div>
+    <div className='p-2 m-2 w-52 shadow-md'>
+        <img className='rounded-lg' src={thumbnails.medium.url} alt='thumbnail' />
+        <ul>
+            <li>{title}</li>
+            <li>{channelTitle}</li>
+            <li>{statistics.viewCount}</li>
+        </ul>
+    </div>
   )
 }
 
