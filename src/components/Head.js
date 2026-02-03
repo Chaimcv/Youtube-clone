@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { toggleMenu } from "../utils/appSlice";
 import { useDispatch } from "react-redux";
+import { YOUTUBE_SEARCH_API } from "../utils/constants";
 
 const Head = () => {
   const dispatch = useDispatch();
-  const toggleMenuHandler = () => {
+
+   //search bar
+const[searchQuery,setSearchQuery]=useState("");  
+console.log(searchQuery);
+useEffect(()=>{
+  getSearchSuggesstions();                       //api call on every key press,but when difference between two key strokes is less than 200ms-> decline api call
+},[searchQuery]);
+const getSearchSuggesstions = async() => {
+  const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
+  const json = await data.json();
+  console.log(json,"search");
+}
+
+  
+  const toggleMenuHandler = () => {         //to collapse(toggle) sidebar on hamburger click
     dispatch(toggleMenu());
   };
   return (
@@ -27,6 +42,8 @@ const Head = () => {
           type="text"
           placeholder="  Search"
           className="w-1/2 h-10 rounded-s-full border border-slate-400"
+          value={searchQuery}
+          onChange={(e)=>setSearchQuery(e.target.value)}
         />
         <button className="border border-slate-400 h-10 rounded-e-full bg-slate-100">
           <img
