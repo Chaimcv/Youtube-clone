@@ -9,14 +9,17 @@ const Head = () => {
    //search bar
 const[searchQuery,setSearchQuery]=useState("");  
 console.log(searchQuery);
-useEffect(()=>{
-   getSearchSuggesstions();                       //api call on every key press,but when difference between two key strokes is less than 200ms-> decline api call
-},[searchQuery]);
-const getSearchSuggesstions = async() => {
-  const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
-  const json = await data.json();
-  console.log(json,"search");
-};
+// useEffect(()=>{
+//    const timer=setTimeout(()=>getSearchSuggesstions(),200);                       //api call on every key press,but when difference between two key strokes is less than 200ms-> decline api call
+// return() =>{
+// clearTimeout(timer); 
+//};
+// },[searchQuery]);
+// const getSearchSuggesstions = async() => {
+//   const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
+//   const json = await data.json();
+//   console.log(json,"search");
+// };
 
   
   const toggleMenuHandler = () => {         //to collapse(toggle) sidebar on hamburger click
