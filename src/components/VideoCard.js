@@ -4,8 +4,8 @@ const VideoCard = ({ info }) => {
     console.log(info,"data passed from videocontainer");
 
     const{ snippet,statistics }= info;
-    console.log(info?.snippet,"c");
-    console.log(info?.statistics,"stati");
+   // console.log(info?.snippet,"c");
+   // console.log(info?.statistics,"stati");
     const{ channelTitle,title,thumbnails }=snippet;
     
   return (
