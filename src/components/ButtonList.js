@@ -10,6 +10,7 @@ const ButtonList = () => {
         <Button name="Unwatched" />
         <Button name="Recently Uploaded" />
         <Button  name="Live"/>
+         <Button  name="Recently watched"/>
     </div>
   )
 }
