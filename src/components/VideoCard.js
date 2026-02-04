@@ -14,7 +14,7 @@ const VideoCard = ({ info }) => {
         <ul>
           
             
-               <li>{title||"hello"}</li>
+               <li>{title}</li>
           
             <li>{channelTitle}</li>
             <li>{statistics.viewCount}</li>
