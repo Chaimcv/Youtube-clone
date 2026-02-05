@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { toggleMenu } from "../utils/appSlice";
 import { useDispatch } from "react-redux";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
+import { cacheResults } from "../utils/searchSlice";
 
 const Head = () => {
   const dispatch = useDispatch();
@@ -22,6 +23,11 @@ console.log(searchQuery);
 //   const json = await data.json();
 //   console.log(json,"search");
 //   setSuggestions(json[1]);
+//  
+ // dispatch(cacheResults({            //update cache data
+ // [searchQuery]: json[1]
+ // }));       
+
 // };
 
   
