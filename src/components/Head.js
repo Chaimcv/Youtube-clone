@@ -24,7 +24,7 @@ console.log(searchQuery);
 //   console.log(json,"search");
 //   setSuggestions(json[1]);
 //  
- // dispatch(cacheResults({            //update cache data
+ // dispatch(cacheResults({            //update cache data--search
  // [searchQuery]: json[1]
  // }));       
 
