@@ -23,15 +23,15 @@ const Sidebar = () => {
         <h1 className='font-bold'>Explore</h1>
         <ul>
             <li  className=' hover:bg-slate-100 rounded-lg'><img className="w-5 h-6 inline-flex m-2" src="https://st4.depositphotos.com/20858482/38053/v/1600/depositphotos_380531066-stock-illustration-shopping-bag-icon-bag-vector.jpg" alt='shopping'/>Shopping</li>
-            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />Music</li>
-            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />Films</li>
-            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />Show more</li>
+            <li className=' hover:bg-slate-100 rounded-lg'><img className="w-6 h-6 inline-flex m-2" src="https://media.istockphoto.com/id/1494298565/vector/vector-illustration-of-musical-note-logo-on-white-background.jpg?s=612x612&w=0&k=20&c=5_JC6F9d3eTAXDwdSx-Amkr67C7GpPf26_MIhSkXieE=" alt='music' />Music</li>
+            <li className=' hover:bg-slate-100 rounded-lg' ><img className="w-5 h-5 inline-flex m-2" src="" />Films</li>
+            <li className=' hover:bg-slate-100 rounded-lg' ><img className="w-5 h-5 inline-flex m-2" src="" />Show more</li>
         </ul>
          <h1 className='font-bold'>More from Youtube</h1>
         <ul>
-            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />YouTube Premium</li>
-            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />YpuTube Music</li>
-            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />YouTube Kids</li>
+            <li><img className="w-5 h-5 inline-flex m-2" src="" />YouTube Premium</li>
+            <li><img className="w-5 h-5 inline-flex m-2" src="" />YpuTube Music</li>
+            <li><img className="w-5 h-5 inline-flex m-2" src="" />YouTube Kids</li>
             
         </ul>
        
