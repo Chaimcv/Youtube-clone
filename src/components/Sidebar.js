@@ -23,15 +23,15 @@ const Sidebar = () => {
         <h1 className='font-bold'>Explore</h1>
         <ul>
             <li  className=' hover:bg-slate-100 rounded-lg'><img className="w-5 h-6 inline-flex m-2" src="https://st4.depositphotos.com/20858482/38053/v/1600/depositphotos_380531066-stock-illustration-shopping-bag-icon-bag-vector.jpg" alt='shopping'/>Shopping</li>
-            <li><img className="w-5 h-5 inline-flex m-2" />Music</li>
-            <li><img className="w-5 h-5 inline-flex m-2" />Films</li>
-            <li><img className="w-5 h-5 inline-flex m-2" />Show more</li>
+            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />Music</li>
+            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />Films</li>
+            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />Show more</li>
         </ul>
          <h1 className='font-bold'>More from Youtube</h1>
         <ul>
-            <li><img className="w-5 h-5 inline-flex m-2" />YouTube Premium</li>
-            <li><img className="w-5 h-5 inline-flex m-2" />YpuTube Music</li>
-            <li><img className="w-5 h-5 inline-flex m-2" />YouTube Kids</li>
+            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />YouTube Premium</li>
+            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />YpuTube Music</li>
+            <li><img className="w-5 h-5 inline-flex m-2" /><img className="w-5 h-5 inline-flex m-2" src="" />YouTube Kids</li>
             
         </ul>
        
