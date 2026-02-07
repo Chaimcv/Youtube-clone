@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ChatMessages from './ChatMessages'
 import { useDispatch, useSelector } from 'react-redux'
 import { addMessage } from '../utils/chatSlice';
 import { generateRandomName, makeRandomMessage } from '../utils/helper';
 
 const LiveChat = () => {
+  const[liveMessage,setLiveMessage]=useState();
 const dispatch=useDispatch();
 const chatMessages =useSelector((store)=> store.chat.messages);
 
@@ -32,8 +33,10 @@ const chatMessages =useSelector((store)=> store.chat.messages);
    
     </div>
      <div className='w-full border p-1 border-gray-800'>
-<input type='text' className='w-80 bg-slate-50' />
-<button className='px-1 mx-1 bg-slate-400'>Submit</button>
+<input type='text' className='w-80 bg-slate-50' value={liveMessage} onChange={(e)=>{
+  setLiveMessage(e.target.value);
+}} />
+<button className='px-1 mx-1 bg-slate-400'>Send</button>
     </div>
     </>
   )
