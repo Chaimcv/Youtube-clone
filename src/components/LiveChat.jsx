@@ -32,12 +32,12 @@ const chatMessages =useSelector((store)=> store.chat.messages);
    </div>
    
     </div>
-     <div className='w-full border p-1 border-gray-800'>
-<input type='text' className='w-80 bg-slate-50' value={liveMessage} onChange={(e)=>{
+     <form className='w-full border p-1 border-gray-800'>
+<input type='text' className='w-80 px-2 bg-slate-100' value={liveMessage} onChange={(e)=>{
   setLiveMessage(e.target.value);
 }} />
 <button className='px-1 mx-1 bg-slate-400'>Send</button>
-    </div>
+    </form>
     </>
   )
 }
