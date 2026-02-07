@@ -22,7 +22,7 @@ const chatMessages =useSelector((store)=> store.chat.messages);
         return ()=> clearInterval(i);
     })
   return (
-    <div className='rounded-lg  h-[500] pl-3 overflow-y-scroll'>
+    <div className='rounded-lg w-full h-[500px] pl-3 overflow-y-scroll flex-col-reverse'>
         {chatMessages.map((chatmsg,index)=>(
  <ChatMessages key={index} name={chatmsg.name} messsage={chatmsg.message} />
         ))}

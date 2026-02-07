@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { LIVE_CHAT_COUNT } from "./constants";
 
 const chatSlice=createSlice({
     name:"chat",
@@ -7,7 +8,8 @@ const chatSlice=createSlice({
     },
     reducers:{
         addMessage:(state,action)=>{
-            state.messages.push(action.payload);
+            state.messages.splice(LIVE_CHAT_COUNT,1);           //after 10 msg it will remove 1 msg from top
+            state.messages.unshift(action.payload);               //unshift-to make themsg appear from bottom
         },
     },
 });
