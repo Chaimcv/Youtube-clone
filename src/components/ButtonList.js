@@ -4,13 +4,15 @@ import Button from './Button'
 const ButtonList = () => {
     //const 
   return (
-    <div className='flex'>
+    <div className='flex font-semibold'>
         <Button name="All" />
-        <Button name="Watched" />
-        <Button name="Unwatched" />
-        <Button name="Recently Uploaded" />
-        <Button  name="Live"/>
-         <Button  name="Recently watched"/>
+        <Button name="Music" />
+        <Button name="Movie musicals" />
+        <Button name="Sreya Ghoshal" />
+        <Button  name="Podcasts"/>
+         <Button  name="Mixes"/>
+          <Button  name="Arijit Singh"/>
+           <Button  name="Palak Muchhal"/>
     </div>
   )
 }

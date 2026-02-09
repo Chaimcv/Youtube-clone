@@ -3,21 +3,21 @@ import React from "react";
 
   const commentsData = [             //Dummy comment-nesting  section implementation
     {
-      name: "Akshay1",
+      name: "Akshay",
       text: "Comments...",
       replies: [],
     },
     {
-      name: "Akshay 2",
+      name: "Anu",
       text: "Comments nesting",
       replies: [
         {
-          name: "Akshay",
+          name: "Vikram",
           text: "Comments...nested",
           replies: [
             {
-              name: "Akshay",
-              text: "Comments...",
+              name: "Anu",
+              text: "Comments...reply",
               replies: [],
             },
           ],
@@ -25,7 +25,7 @@ import React from "react";
       ],
     },
     {
-      name: "Akshay-last",
+      name: "Kiran",
       text: "Comments...",
       replies: [],
     },
@@ -57,9 +57,8 @@ import React from "react";
         {comments.map((comment,index) => (
 
           <div>
-
-             <h1>comment list</h1>
-            <Comment key={index} data={comment} />;           
+             {/* <h1>comment list</h1> */}
+            <Comment key={index} data={comment} />           
             <div className="replies pl-5 border border-l-black ml-5">
                
                <CommentList comments={comment.replies} />
