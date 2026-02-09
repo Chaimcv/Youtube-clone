@@ -2,7 +2,6 @@ import React from 'react'
 import Button from './Button'
 
 const ButtonList = () => {
-    //const 
   return (
     <div className='flex font-semibold'>
         <Button name="All" />

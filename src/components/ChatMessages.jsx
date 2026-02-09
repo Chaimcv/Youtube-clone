@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 const ChatMessages = ({name,messsage}) => {
   return (
     <div className='flex inline-block'>
