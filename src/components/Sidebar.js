@@ -45,6 +45,8 @@ const Sidebar = () => {
              <li className=' hover:bg-slate-100 rounded-lg' ><img className="w-5 h-5 inline-flex m-2" src='https://w7.pngwing.com/pngs/317/872/png-transparent-youtube-play-button-computer-icons-help-text-trademark-sign-thumbnail.png' />Help</li>
              <li className=' hover:bg-slate-100 rounded-lg' ><img className="w-5 h-5 inline-flex m-2"src='https://cdn.iconscout.com/icon/free/png-512/free-feedback-icon-svg-download-png-1513839.png?f=webp&w=256' />Send Feedback</li>
         </ul>
+        < br/>
+       
     </div>
   )
 }
