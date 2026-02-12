@@ -1,5 +1,5 @@
 //youtube popular video api
-const GOOGLE_API_KEY="AIzaSyBET7NpkeY1-2C83Ttprk0q3KeHfZouK5I";
+const GOOGLE_API_KEY="AIzaSyDglqAKd7V1oXMM4mh8kmHu5DNhbpW0TEg";
 export const YOUTUBE_VIDEOS_API="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+ GOOGLE_API_KEY;
 
 //search functionality api
